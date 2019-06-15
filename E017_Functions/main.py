@@ -18,3 +18,4 @@ sayHello('John')
 
 side_length = 5
 area = findSquareArea(side_length)
+print(area)
