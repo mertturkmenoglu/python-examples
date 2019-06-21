@@ -23,6 +23,11 @@ p2 = Person("Emily", 32)
 print("John's planet: {}".format(p1.__class__.planet))
 print("Emily's planet: {}".format(p2.__class__.planet))
 
+p1.__class__.planet = "mars"
+
+print("John's planet: {}".format(p1.__class__.planet))
+print("Emily's planet: {}".format(p2.__class__.planet))
+
 print("{} is {} years old".format(p1.name, p1.age))
 print("{} is {} years old".format(p2.name, p2.age))
 
