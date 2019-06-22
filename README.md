@@ -9,8 +9,7 @@
   * `git clone https://github.com/mertturkmenoglu/python.git`
 * After getting repository on your local environment, a simple run process:  
 ```
-    cd python
-    cd E001_HelloWorld
+    cd python/examples/E001_HelloWorld
     python3 main.py
 ```  
 * You can use `afgenerator.jar` file to auto file generation.
