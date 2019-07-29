@@ -10,6 +10,14 @@
       <sourceFolder url="file://$MODULE_DIR$/examples/fileio/E001_Modules" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples/fileio/E002_Packages" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples/other/E008_VarArgs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/other/E010_UnitTesting" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/other" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/oop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/old_examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/functions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/fileio" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/data_types" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/basics" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/notes" />
     </content>
     <orderEntry type="inheritedJdk" />
