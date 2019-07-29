@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/practice" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/practice/P004_DSA" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/basics/E006_Constant" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/old_examples/sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/fileio/E001_Modules" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/fileio/E002_Packages" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/other/E008_VarArgs" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/notes" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
+</module>
