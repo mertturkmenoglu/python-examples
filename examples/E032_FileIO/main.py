@@ -11,9 +11,9 @@
 # In "with" block, we call write method on file object. As you can guess, it writes
 # given string to file. After this operations, Python will automatically call close
 # method on the object and close the stream.
-with open("output.txt",mode = 'w', encoding = 'utf-8') as file:
-   file.write("FIRST LINE\n")
-   file.write("SECOND LINE\n")
-   file.write("THIRD AND THE LAST LINE\n")
+with open("output.txt", mode='w', encoding='utf-8') as file:
+    file.write("FIRST LINE\n")
+    file.write("SECOND LINE\n")
+    file.write("THIRD AND THE LAST LINE\n")
 
 # file stream is closed automatically

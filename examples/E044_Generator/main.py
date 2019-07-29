@@ -1,18 +1,19 @@
 # Example 044: Generators
 
-def evenrange(begin=0, end=0):
-    if (begin % 2 == 0):
+
+def even_range(begin=0, end=0):
+    if begin % 2 == 0:
         yield begin
     else:
         begin += 1
         yield begin
 
-    while (begin < end):
+    while begin < end:
         begin += 2
         yield begin
 
 
-for i in evenrange(4, 18):
+for i in even_range(4, 18):
     print(i)
 
 # Generator expression

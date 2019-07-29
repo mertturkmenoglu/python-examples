@@ -1,19 +1,19 @@
-def checkNeighbours(matrix, first, second):
+def check_neighbours(matrix, first, second):
     return matrix[first][second]
 
 
-def checkNeighboursHandler(matrix, wordlist):
+def check_neighbours_handler(matrix, word_list):
 
     first = input('Enter your first word: ')
     second = input('Enter your second word: ')
 
-    firstIndex = getindex(wordlist, first)
-    secondIndex = getindex(wordlist, second)
+    first_index = get_index(word_list, first)
+    second_index = get_index(word_list, second)
 
-    if firstIndex == -1 or secondIndex == -1:
+    if first_index == -1 or second_index == -1:
         raise ValueError
 
-    result = checkNeighbours(matrix, firstIndex, secondIndex)
+    result = check_neighbours(matrix, first_index, second_index)
 
     if result:
         print('{} and {} are neighbours'.format(first, second))
@@ -21,12 +21,12 @@ def checkNeighboursHandler(matrix, wordlist):
         print('{} and {} are not neighbours'.format(first, second))
 
 
-def printNeighbours(matrix, wordlist, index):
-    wordCount = len(wordlist)
+def print_neighbours(matrix, word_list, index):
+    word_count = len(word_list)
 
-    for i in range(wordCount):
+    for i in range(word_count):
         if matrix[index][i]:
-            print(wordlist[i].word)
+            print(word_list[i].word)
 
 
 def connection(first, second):
@@ -45,7 +45,7 @@ def connection(first, second):
     return False if counter >= 2 else True
 
 
-def connectionHandler():
+def connection_handler():
     first = input('Enter your first word: ')
     second = input('Enter your second word: ')
 
@@ -57,16 +57,17 @@ def connectionHandler():
         print("More than one letter is different\n\n")
 
 
-def getindex(wordlist, string):
-    for index, node in enumerate(wordlist):
-        result = stringcompare(node.word, string)
+def get_index(word_list, string):
+    for index, node in enumerate(word_list):
+        result = string_compare(node.word, string)
 
         if result:
             return index
 
     return -1
 
-def printmenu():
+
+def print_menu():
     print("---------------------------------------------------------------\n")
     print("1- Print Adjacency Matrix (First n element of connection matrix)\n")
     print("2- areTheyNeighbours (Give two words from matrix)\n")
@@ -77,17 +78,17 @@ def printmenu():
     print("---------------------------------------------------------------\n")
 
 
-def printneighbourshandler(matrix, wordlist):
+def print_neighbours_handler(matrix, word_list):
     string = input('Enter your word')
-    index = getindex(wordlist, string)
+    index = get_index(word_list, string)
 
     if index == -1:
         raise ValueError
 
-    printNeighbours(matrix, wordlist, index)
+    print_neighbours(matrix, word_list, index)
 
 
-def stringcompare(str1, str2):
+def string_compare(str1, str2):
     str1 = str(str1)
     str2 = str(str2)
     i = 0

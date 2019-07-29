@@ -1,5 +1,6 @@
 # Example 049: Armstrong number
 
+
 def is_armstrong(num: int) -> bool:
     return True if sum(int(d) ** len(str(num)) for d in str(num)) == num else False
 

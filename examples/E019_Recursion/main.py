@@ -1,14 +1,16 @@
 # Example 019: Recursion example
 
-def findFactorial(num):
+
+def find_factorial(num):
     """Find the factorial of the given number"""
     if num == 1:
         return 1
     else:
-        return num * findFactorial(num - 1)
+        return num * find_factorial(num - 1)
+
 
 x = 4
-print(findFactorial(x))
+print(find_factorial(x))
 
 x = 5 
-print(findFactorial(x))
+print(find_factorial(x))

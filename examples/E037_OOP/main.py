@@ -1,5 +1,6 @@
 # Example 037: Object Oriented Programming example
 
+
 class Person:
     # Class attribute
     planet = "earth"
@@ -13,8 +14,9 @@ class Person:
     def get_old(self, year):
         self.age += year
 
-    def get_infos(self):
+    def get_information(self):
         return "Name: {} Age: {}".format(self.name, self.age)
+
 
 # Create objects
 p1 = Person("John", 47)
@@ -31,6 +33,6 @@ print("Emily's planet: {}".format(p2.__class__.planet))
 print("{} is {} years old".format(p1.name, p1.age))
 print("{} is {} years old".format(p2.name, p2.age))
 
-print(p1.get_infos())
+print(p1.get_information())
 p1.get_old(10)
-print(p1.get_infos())
+print(p1.get_information())

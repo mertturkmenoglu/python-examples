@@ -5,7 +5,6 @@ import fractions
 import math
 import random
 
-
 # ------------------------------------- #
 # Integer
 var = 1
@@ -31,7 +30,7 @@ print('\n' * 3)
 var = 3 + 4j
 print('Number: {}'.format(var))
 print('Type: {}'.format(type(var)))
-print('Is istance: {}'.format(isinstance(var, complex)))
+print('Is instance: {}'.format(isinstance(var, complex)))
 print('-' * 10)
 # ------------------------------------- #
 
@@ -106,12 +105,13 @@ print('\n' * 3)
 # Fractions library examples
 print('fractions.Fraction(3.14): {}'.format(fractions.Fraction(3.14)))
 print('fractions.Fraction(10): {}'.format(fractions.Fraction(10)))
-print('fractions.Fraction(2,5): {}'.format(fractions.Fraction(2,5)))
+print('fractions.Fraction(2,5): {}'.format(fractions.Fraction(2, 5)))
 print('fractions.Fraction(1.1): {}'.format(fractions.Fraction(1.1)))
 print("fractions.Fraction('1.1'): {}".format(fractions.Fraction('1.1')))
-print('fractions.Fraction(2,5) + fractions.Fraction(2,5): {}'.format(fractions.Fraction(2,5) + fractions.Fraction(2,5)))
-print('1 / fractions.Fraction(3,4): {}'.format(1 / fractions.Fraction(3,4)))
-print('fractions.Fraction(-3,10) > 0: {}'.format(fractions.Fraction(-3,10) > 0))
+print(
+    'fractions.Fraction(2,5) + fractions.Fraction(2,5): {}'.format(fractions.Fraction(2, 5) + fractions.Fraction(2, 5)))
+print('1 / fractions.Fraction(3,4): {}'.format(1 / fractions.Fraction(3, 4)))
+print('fractions.Fraction(-3,10) > 0: {}'.format(fractions.Fraction(-3, 10) > 0))
 # ------------------------------------- #
 
 print('\n' * 3)
@@ -130,7 +130,7 @@ print('\n' * 3)
 
 # ------------------------------------- #
 # Random library examples
-print('Random between 3 - 9: {}'.format(random.randrange(3,9)))
+print('Random between 3 - 9: {}'.format(random.randrange(3, 9)))
 
 knights = ['Robin', 'Galahad', 'Lancelot', 'Sir Not Appearing In This Film']
 print('Knights: {}'.format(knights))

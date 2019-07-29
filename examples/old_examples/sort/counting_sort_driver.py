@@ -1,6 +1,6 @@
 # Driver code for testing
 # counting sort code
-# Numers are arbitrary
+# Numbers are arbitrary
 # Can be changed
 
 from random import randint

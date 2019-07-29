@@ -1,5 +1,5 @@
 def merge_sort(array, start, end):
-    if (start < end):
+    if start < end:
         mid = (start + end) // 2
         merge_sort(array, start, mid)
         merge_sort(array, mid + 1, end)
@@ -24,5 +24,5 @@ def merge(array, start, mid, end):
     while ib <= end:
         tmp.append(array[ib])
 
-    for i in range(start, end+1):
+    for i in range(start, end + 1):
         array[i] = tmp[i - start]

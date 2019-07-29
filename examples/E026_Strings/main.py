@@ -40,7 +40,6 @@ print('list(enumerate({}): {}'.format(word, enumeration))
 # String length
 print('Word: {} Length: {}'.format(word, len(word)))
 
-
 # Formatting
 
 # Number base

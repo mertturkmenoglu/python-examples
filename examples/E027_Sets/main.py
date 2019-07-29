@@ -7,7 +7,6 @@
 # We can add or remove item
 
 
-
 # ------------------------------------- #
 # Create empty set
 empty_set = set()
@@ -44,7 +43,7 @@ print('\n' * 3)
 # ------------------------------------- #
 # Set can not contain mutable objects
 # set cannot have mutable items
-even = set([0, 2, 4, 6, 8])
+even = {0, 2, 4, 6, 8}
 print(even)
 # ------------------------------------- #
 
@@ -120,7 +119,7 @@ print('second - first: {}'.format(second - first))
 print('first ^ second: {}'.format(first ^ second))
 print('second ^ first: {}'.format(second ^ first))
 
-#Functions
+# Functions
 print('Using functions')
 print('first.union(second): {}'.format(first.union(second)))
 print('second.union(first): {}'.format(second.union(first)))
@@ -157,7 +156,7 @@ print('\n' * 3)
 
 # ------------------------------------- #
 # Frozenset
-first  = frozenset([1, 2, 3, 4, 5])
+first = frozenset([1, 2, 3, 4, 5])
 second = frozenset([3, 4, 5, 6, 7])
 
 print('first.isdisjoint(second): ', first.isdisjoint(second))

@@ -1,5 +1,6 @@
 from math import pi
 
-def circleArea(r):
+
+def circle_area(r):
     return pi*(r**2)
 

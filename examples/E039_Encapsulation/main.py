@@ -1,7 +1,8 @@
 # Example 039: Encapsulation
 
+
 class Person:
-    
+
     # dunder variables are "private"
     def __init__(self, name, age):
         self.__name = name

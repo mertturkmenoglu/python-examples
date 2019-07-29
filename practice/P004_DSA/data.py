@@ -22,7 +22,7 @@ class Queue:
         self.__size = len(self.__elements)
 
     def enqueue(self, element):
-        if self.isfull():
+        if self.is_full():
             raise Exception
 
         self.__elements.append(element)
@@ -30,7 +30,7 @@ class Queue:
         return True
 
     def dequeue(self):
-        if self.isempty():
+        if self.is_empty():
             raise Exception
 
         self.__elements.reverse()
@@ -40,8 +40,8 @@ class Queue:
 
         return value
 
-    def isempty(self):
+    def is_empty(self):
         return True if self.__size == 0 else False
 
-    def isfull(self):
+    def is_full(self):
         return True if self.__size == self.__capacity else False

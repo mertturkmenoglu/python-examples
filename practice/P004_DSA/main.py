@@ -15,23 +15,23 @@ with open(file_path, encoding='utf-8', mode="r+") as file:
         word_list.append(data.Node(line, 0, None))
 
 line_count = len(word_list)
-mtr = createadjacencymatrix(word_list)
+mtr = create_adjacency_matrix(word_list)
 
 while True:
-    printmenu()
+    print_menu()
     choice = int(input('Enter your choice'))
     operation = None
 
     if choice == 1:
-        printmatrix(mtr)
+        print_matrix(mtr)
     elif choice == 2:
-        checkNeighboursHandler(mtr, word_list)
+        check_neighbours_handler(mtr, word_list)
     elif choice == 3:
-        connectionHandler()
+        connection_handler()
     elif choice == 4:
-        bfshandler(mtr, word_list)
+        bfs_handler(mtr, word_list)
     elif choice == 5:
-        printneighbourshandler(mtr, word_list)
+        print_neighbours_handler(mtr, word_list)
     elif choice == 0:
         break
     else:

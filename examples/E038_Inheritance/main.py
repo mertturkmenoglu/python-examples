@@ -1,4 +1,5 @@
-# Example 038: Inheritance exaxmple
+# Example 038: Inheritance example
+
 
 # Parent
 class Shape:
@@ -6,11 +7,13 @@ class Shape:
     def __init__(self):
         print("Shape object created")
 
-    def printInfo(self):
+    def print_info(self):
         print("This is a Shape object")
 
-    def draw(self):
+    @staticmethod
+    def draw():
         print("Drawing a Shape")
+
 
 # A child class
 class Triangle(Shape):
@@ -19,13 +22,15 @@ class Triangle(Shape):
         super().__init__()
         print("Triangle object created")
 
-    def printInfo(self):
+    def print_info(self):
         print("This is a Triangle object")
 
-    def get_side_count(self):
+    @staticmethod
+    def get_side_count():
         return 3
 
+
 my_triangle = Triangle()
-my_triangle.printInfo()
+my_triangle.print_info()
 my_triangle.draw()
 print(my_triangle.get_side_count())

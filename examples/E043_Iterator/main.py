@@ -2,9 +2,10 @@
 
 import time
 
+
 class Odd:
 
-    def __init__(self, begin = 1, end = 1):
+    def __init__(self, begin=1, end=1):
         self.begin = begin
         self.end = end
 
@@ -24,13 +25,13 @@ class Odd:
 class InfEven:
 
     def __iter__(self):
-        self.num = 0
+        self.number = 0
         return self
 
     def __next__(self):
-        num = self.num
-        self.num += 2
-        return num
+        number = self.number
+        self.number += 2
+        return number
 
 
 for num in Odd(1, 17):

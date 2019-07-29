@@ -2,11 +2,10 @@
 
 # Unordered collection
 # Key - value pairs
-# Retrive Value via Key
+# Retrieve Value via Key
 
 # An item has a key and a value. They express a key-value pair
 # Keys must be immutable and unique
-
 
 
 # ------------------------------------------ #
@@ -20,13 +19,13 @@ print('Movies: ', movies)
 
 # Dictionary with mixed type keys
 person = {
-    'name': 'John', 
+    'name': 'John',
     2: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 }
 print('Person: ', person)
 
 # Create dictionary using dict()
-actors = dict({1:'Keanu', 2:'Leonardo'})
+actors = dict({1: 'Keanu', 2: 'Leonardo'})
 print('Actors: ', actors)
 # ------------------------------------------ #
 
@@ -76,11 +75,11 @@ print('\n' * 3)
 # del keyword may used
 
 numbers = {
-    0:1, 
-    1:2, 
-    2:3, 
-    3:4, 
-    4:5
+    0: 1,
+    1: 2,
+    2: 3,
+    3: 4,
+    4: 5
 }
 
 print('number.pop(4): ', numbers.pop(4))

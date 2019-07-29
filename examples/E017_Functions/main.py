@@ -1,21 +1,24 @@
 # Example 017: Functions
 
+
 # First comment like below is called documentation string
-def sayHello(name):
-    '''Prints Hello then the argument'''
+def say_hello(name):
+    """Prints Hello then the argument"""
     print('Hello {}'.format(name))
 
-def findSquareArea(side_length):
+
+def find_square_area(s_length):
     """Finds the area of a square with given
     side length"""
-    if side_length > 0:
-        return side_length * side_length
+    if s_length > 0:
+        return s_length * s_length
     else:
         return -1
 
-print(sayHello.__doc__)
-sayHello('John')
+
+print(say_hello.__doc__)
+say_hello('John')
 
 side_length = 5
-area = findSquareArea(side_length)
+area = find_square_area(side_length)
 print(area)

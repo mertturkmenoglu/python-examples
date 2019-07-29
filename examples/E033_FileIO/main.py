@@ -4,7 +4,7 @@
 # But it runs fine. I do not know what is the problem.
 
 # Open the file stream in classical way.
-file = open("input.txt", mode = "r", encoding = "utf-8")
+file = open("input.txt", mode="r", encoding="utf-8")
 
 # Read first 8 data(bytes) and print it to stdout
 print(file.read(8))
@@ -26,7 +26,7 @@ file.close()
 
 # ------------- #
 # Best way to read a file line by line.
-file = open("input.txt", mode = "r", encoding = "utf-8")
+file = open("input.txt", mode="r", encoding="utf-8")
 for line in file:
     print(line, end='')
 

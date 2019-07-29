@@ -1,5 +1,6 @@
 # Practice 003: Queue example
 
+
 class Queue:
 
     def __init__(self, capacity):
@@ -8,16 +9,15 @@ class Queue:
         self.__size = len(self.__elements)
 
     def enqueue(self, element):
-        if (self.isFull()):
+        if self.is_full():
             raise Exception
-            return False
-        
+
         self.__elements.append(element)
         self.__size = len(self.__elements)
         return True
 
     def dequeue(self):
-        if (self.isEmpty()):
+        if self.is_empty():
             raise Exception
 
         self.__elements.reverse()
@@ -27,17 +27,16 @@ class Queue:
 
         return value
 
-    def isEmpty(self):
+    def is_empty(self):
         return True if self.__size == 0 else False
     
-    def isFull(self):
+    def is_full(self):
         return True if self.__size == self.__capacity else False
 
-    def printQueue(self):
+    def print_queue(self):
         print("---")
         print(self.__elements)
         print("---")
-
 
 
 q = Queue(5)
@@ -45,10 +44,11 @@ q.enqueue(1)
 q.enqueue(2)
 q.enqueue(3)
 q.enqueue(4)
-q.printQueue()
+q.print_queue()
 q.enqueue(5)
-q.printQueue()
+q.print_queue()
 
+# noinspection PyBroadException
 try:
     q.enqueue(6)
 except Exception as e:
@@ -56,8 +56,9 @@ except Exception as e:
 
 for i in range(5):
     print("Value: ", q.dequeue())
-    q.printQueue()
+    q.print_queue()
 
+# noinspection PyBroadException
 try:
     print("Value: ", q.dequeue())
 except Exception as e:

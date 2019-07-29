@@ -1,33 +1,36 @@
 # Example 018: Function Arguments
 
+
 # Default arguments
 # This type of arguments must come after
 # non-default type arguments
-def printMessage(name, message = 'Hi'):
+def print_message(name, message='Hi'):
     """Prints the given message and the name"""
     print(message + " " + name)
 
-def addNumbers(*numbers):
+
+def add_numbers(*numbers):
     """Adds numbers and then returns the sum"""
-    sum = 0
+    sum_of_numbers = 0
 
     for number in numbers:
-        sum += number
-    
-    return sum
+        sum_of_numbers += number
+
+    return sum_of_numbers
+
 
 # Message will be default value
-printMessage("John")
+print_message("John")
 
 # Message will be "Good morning"
-printMessage("Emily", "Good morning")
+print_message("Emily", "Good morning")
 
 # Keyword arguments
-printMessage(message = "Good night", name = "Clark")
+print_message(message="Good night", name="Clark")
 
 # Variadic function
-sum = addNumbers(3, 4, 5)
-print(sum)
+result = add_numbers(3, 4, 5)
+print(result)
 
-sum = addNumbers(3, 4, 5, 6)
-print(sum)
+result = add_numbers(3, 4, 5, 6)
+print(result)

@@ -3,18 +3,18 @@
 import threading
 
 
-def printNumbers():
+def print_numbers():
     for i in range(50):
         print(i)
 
 
-def printMessage():
+def print_message():
     for i in range(50):
         print("Ni!")
 
 
-t1 = threading.Thread(target=printNumbers)
-t2 = threading.Thread(target=printMessage)
+t1 = threading.Thread(target=print_numbers)
+t2 = threading.Thread(target=print_message)
 
 t1.start()
 t2.start()

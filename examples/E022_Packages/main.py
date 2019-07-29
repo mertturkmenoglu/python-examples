@@ -1,15 +1,15 @@
 # Example 022: Package example
-import Calculator
+
 from Calculator.Math import add
 import Calculator.Test.testFile
 import Calculator.UI.button as button
 
-Calculator.printInfo()
+Calculator.print_info()
 
-add.printInfo()
+add.print_info()
 
-Calculator.Test.printInfo()
-Calculator.Test.testFile.printInfo()
+Calculator.Test.print_info()
+Calculator.Test.testFile.print_info()
 
-button.printInfo()
-Calculator.UI.printInfo()
+button.print_info()
+Calculator.UI.print_info()

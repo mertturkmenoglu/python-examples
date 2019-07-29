@@ -32,7 +32,7 @@ print("Date =", timestamp)
 print('\n' * 3)
 
 # Create a date obj
-today_date = datetime.date.today() 
+today_date = datetime.date.today()
 print("Current year:", today_date.year)
 print("Current month:", today_date.month)
 print("Current day:", today_date.day)
@@ -48,7 +48,7 @@ b = datetime.time(11, 34, 56)
 print("b =", b)
 
 # Create time object with params
-c = datetime.time(hour = 11, minute = 34, second = 56)
+c = datetime.time(hour=11, minute=34, second=56)
 print("c =", c)
 
 # Create time object with params

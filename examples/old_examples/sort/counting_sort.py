@@ -1,10 +1,10 @@
 def counting_sort(array, highest):
-    ''' Counting sort algorithm implementation.
+    """ Counting sort algorithm implementation.
     For a given array and its highest number
-    function returns a sorted array'''
+    function returns a sorted array"""
     
     # This array will keep the existing numbers
-    keep = [0 for i in range(highest + 1)]
+    keep = [0 for _ in range(highest + 1)]
 
     for var in array:
         keep[var] += 1

@@ -4,64 +4,62 @@ from bubble_sort import bubble_sort
 from selection_sort import selection_sort
 from insertion_sort import insertion_sort
 
+
 n = 1000
 
-def findWinner():
+
+def find_winner():
     array = []
-    for i in range(n):
+    for _ in range(n):
         array.append(randint(0, n))
 
-    tempList = array.copy()
-    bubbleStartTime = time.time()
-    bubble_sort(tempList, n)
-    bubbleEndTime = time.time()
-    bubbleCompleteTime = bubbleEndTime - bubbleStartTime
+    temp_list = array.copy()
+    bubble_start_time = time.time()
+    bubble_sort(temp_list, n)
+    bubble_end_time = time.time()
+    bubble_complete_time = bubble_end_time - bubble_start_time
 
-    tempList = array.copy()
-    selectionStartTime = time.time()
-    selection_sort(tempList, n)
-    selectionEndTime = time.time()
-    selectionCompleteTime = selectionEndTime - selectionStartTime
+    temp_list = array.copy()
+    selection_start_time = time.time()
+    selection_sort(temp_list, n)
+    selection_end_time = time.time()
+    selection_complete_time = selection_end_time - selection_start_time
 
-    tempList = array.copy()
-    insertionStartTime = time.time()
-    insertion_sort(tempList, n)
-    insertionEndTime = time.time()
-    insertionCompleteTime = insertionEndTime - insertionStartTime
+    temp_list = array.copy()
+    insertion_start_time = time.time()
+    insertion_sort(temp_list, n)
+    insertion_end_time = time.time()
+    insertion_complete_time = insertion_end_time - insertion_start_time
 
-    tempList = array.copy()
-    pythonSortStartTime = time.time()
-    sorted(tempList)
-    pythonSortEndTime = time.time()
-    pythonSortCompleteTime = pythonSortEndTime - pythonSortStartTime
+    temp_list = array.copy()
+    python_sort_start_time = time.time()
+    sorted(temp_list)
+    python_sort_end_time = time.time()
+    python_sort_complete_time = python_sort_end_time - python_sort_start_time
 
-    print(bubbleCompleteTime)
-    print(selectionCompleteTime)
-    print(insertionCompleteTime)
-    print(pythonSortCompleteTime)
+    print(bubble_complete_time)
+    print(selection_complete_time)
+    print(insertion_complete_time)
+    print(python_sort_complete_time)
     print('One cycle ended')
 
-    timeArray = []
-    timeArray.append(bubbleCompleteTime)
-    timeArray.append(selectionCompleteTime)
-    timeArray.append(insertionCompleteTime)
-    timeArray.append(pythonSortCompleteTime)
-    return findMinIndex(timeArray)
+    time_arr = [bubble_complete_time, selection_complete_time, insertion_complete_time, python_sort_complete_time]
+    return find_min_index(time_arr)
 
 
-def findMinIndex(array):
-    min = 0
-    for i in range(1, len(array)):
-        if(array[i] < array[min]):
-            min = i
-    return min
+def find_min_index(array):
+    min_index = 0
+    for _ in range(1, len(array)):
+        if array[i] < array[min_index]:
+            min_index = i
+    return min_index
 
 
 winners = [0, 0, 0, 0]
 
 for i in range(10000):
-    j = findWinner()
-    print('Winner: %d'%j)
+    j = find_winner()
+    print('Winner: %d' % j)
     winners[j] += 1
 
 print(winners)

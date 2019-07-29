@@ -1,5 +1,6 @@
 from functools import partial
 
+
 # Looks like a normal function definition
 def function(arg1, arg2, arg3):
     return arg1 + arg2 + arg3

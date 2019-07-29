@@ -1,13 +1,13 @@
 # Example 035: Exception Handling example
 import sys
 
-my_list = ['kadikoy', 3, 0, 'a',]
+my_list = ['kadikoy', 3, 0, 'a', ]
 
 for item in my_list:
     try:
         print("Item is: ", item)
         result = 42 / item
-    except:
+    except ArithmeticError:
         print("Exception: ", sys.exc_info()[0], " occured.")
 
 numbers = [1, 3, 5, 7, 9]
@@ -23,7 +23,7 @@ except ValueError as v_error:
 
 
 try:
-    file = open('text.txt', mode = "r", encoding = "utf-8")
+    file = open('text.txt', mode="r", encoding="utf-8")
     for line in file:
         print(line)
 finally:

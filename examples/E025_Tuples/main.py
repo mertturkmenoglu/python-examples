@@ -13,7 +13,7 @@ print('Mixed Tuple: ', mixed_tuple)
 nested_tuple = ("Keanu", ["Neo", 1, 33], (1, 2, 3))
 print('Nested Tuple: ', nested_tuple)
 
-# Declaring without paranthesis
+# Declaring without parenthesis
 new_tuple = 3, 4.6, "dog"
 print(new_tuple)
 
@@ -84,6 +84,5 @@ print('a' in word)
 print('z' in word)
 print('z' not in word)
 
-
 for letter in word:
-     print(letter)
+    print(letter)

@@ -1,7 +1,7 @@
 # Example 006: Constant variable
 import constant
 
-# Because of design principles, we do not have constanst in Python
+# Because of design principles, we do not have constants in Python
 # You may declare constant values in other languages via 'const' in C,
 # 'val' in Kotlin, 'final' in Java... etc. But in Python, we do not have this
 # We can declare variables(we call them variables but actually they do not change)

@@ -3,5 +3,5 @@
 row = int(input('Row number: '))
 col = int(input('Col number: '))
 
-matrix = [[0 for i in range(col)] for i in range(row)]
+matrix = [[0 for _ in range(col)] for _ in range(row)]
 print(matrix)

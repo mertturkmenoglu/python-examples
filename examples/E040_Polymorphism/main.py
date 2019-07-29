@@ -1,5 +1,6 @@
 # Example 040: Polymorphism
 
+
 class Triangle:
     
     def __init__(self, base, height):
@@ -9,7 +10,8 @@ class Triangle:
     def area(self):
         return (self.base * self.height) / 2
 
-    def draw(self):
+    @staticmethod
+    def draw():
         print("Drawing triangle")
 
 
@@ -20,23 +22,21 @@ class Square:
     def area(self):
         return self.side * self.side
 
-    def draw(self):
+    @staticmethod
+    def draw():
         print("Drawing square")
 
 
-def printArea(shape):
-    print(shape.area())
+def print_area(s):
+    print(s.area())
 
 
-def drawShape(shape):
-    shape.draw()
+def draw_shape(s):
+    s.draw()
 
 
-shapes = []
-shapes.append(Triangle(10, 5))
-shapes.append(Square(7))
+shapes = [Triangle(10, 5), Square(7)]
 
 for shape in shapes:
-    printArea(shape)
-    drawShape(shape)
-
+    print_area(shape)
+    draw_shape(shape)

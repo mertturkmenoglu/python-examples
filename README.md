@@ -12,16 +12,6 @@
     cd python/examples/E001_HelloWorld
     python3 main.py
 ```  
-* You can use `afgenerator.jar` file to auto file generation.
-* Simple process:
-  * Add an alias:
-    * `vim ~/.bashrc`
-    * Add this line: `alias gen="./afgenerator.jar"`
-    * Run this command: `source ~/.bashrc`
-  * Program needs `settings.json` in the directory. When you open it first time, it will ask you necessary parameters and create the file.
-  * Run the program via terminal with arguments:
-    * `gen 123 PyTest`: Create folder
-    * `gen -s`: Update settings
 ***
 # Contributing
 * All ideas and helps are welcome. Please contact with me.

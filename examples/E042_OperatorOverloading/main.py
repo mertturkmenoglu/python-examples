@@ -1,5 +1,6 @@
 # Example 042: Operator Overloading
 
+
 class Vector2D:
 
     def __init__(self, x, y):
@@ -62,8 +63,6 @@ class Vector2D:
         other_magnitude = (other.x ** 2) + (other.y ** 2)
 
         return self_magnitude >= other_magnitude
-
-
 
 
 v1 = Vector2D(3, 4)

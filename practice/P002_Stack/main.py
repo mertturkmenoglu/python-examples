@@ -1,5 +1,6 @@
 # Practice 002: Stack example
 
+
 class Stack:
 
     def __init__(self, capacity):
@@ -8,16 +9,15 @@ class Stack:
         self.__size = len(self.__elements)
 
     def push(self, element):
-        if (self.isFull()):
+        if self.is_full():
             raise Exception
-            return False
-        
+
         self.__elements.append(element)
         self.__size = len(self.__elements)
         return True
 
     def pop(self):
-        if (self.isEmpty()):
+        if self.is_empty():
             raise Exception
 
         value = self.__elements.pop()
@@ -25,16 +25,16 @@ class Stack:
 
         return value
 
-    def isEmpty(self):
+    def is_empty(self):
         return True if self.__size == 0 else False
     
-    def isFull(self):
+    def is_full(self):
         return True if self.__size == self.__capacity else False
 
-    def printStack(self):
+    def print_stack(self):
         print("---")
-        for i in self.__elements:
-            print(i)
+        for element in self.__elements:
+            print(element)
         print("---")
 
 
@@ -43,10 +43,11 @@ s.push(1)
 s.push(2)
 s.push(3)
 s.push(4)
-s.printStack()
+s.print_stack()
 s.push(5)
-s.printStack()
+s.print_stack()
 
+# noinspection PyBroadException
 try:
     s.push(6)
 except Exception as e:
@@ -54,8 +55,9 @@ except Exception as e:
 
 for i in range(5):
     print("Value: ", s.pop())
-    s.printStack()
+    s.print_stack()
 
+# noinspection PyBroadException
 try:
     print("Value: ", s.pop())
 except Exception as e:

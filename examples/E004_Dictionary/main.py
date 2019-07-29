@@ -12,7 +12,7 @@ print('\n\n\n')
 my_dictionary = {
     'name': 'king arthur', 
     'age': 42, 
-    'color':'blue'
+    'color': 'blue'
 }
 
 # Print dictionary

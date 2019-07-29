@@ -1,13 +1,14 @@
 # Practice 005: Quick sort implementation
 
-def quickSort(array: list, begin: int = 0, end: int = 0):
+
+def quick_sort(array: list, begin: int = 0, end: int = 0):
     if begin < end:
-        pIndex = partititon(array, begin, end)
-        quickSort(array, begin, pIndex - 1)
-        quickSort(array, pIndex + 1, end)
+        p_index = partition(array, begin, end)
+        quick_sort(array, begin, p_index - 1)
+        quick_sort(array, p_index + 1, end)
 
 
-def partititon(array: list, begin: int, end: int):
+def partition(array: list, begin: int, end: int):
     pivot = array[end]
     i = begin - 1
 
@@ -21,14 +22,15 @@ def partititon(array: list, begin: int, end: int):
 
     return i
 
+
 if __name__ == "__main__":
     import random
     
     n = random.randint(7, 15)
     arr = []
-    for i in range(n):
+    for k in range(n):
         arr.append(random.randint(-n, n))
     
     print(arr)
-    quickSort(arr, begin=0, end=len(arr) - 1)
+    quick_sort(arr, begin=0, end=len(arr) - 1)
     print(arr)

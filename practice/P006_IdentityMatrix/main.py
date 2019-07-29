@@ -1,7 +1,8 @@
 # Practice 006: Identity Matrix
 # Detect if a given matrix is identity matrix
 
-def isIdentityMatrix(mtr: list) -> bool:
+
+def is_identity_matrix(mtr: list) -> bool:
     row = len(mtr)
     col = len(mtr[0])
 
@@ -18,6 +19,7 @@ def isIdentityMatrix(mtr: list) -> bool:
 
     return True
 
+
 mtr1 = [
     [1, 0, 0],
     [0, 1, 0],
@@ -30,5 +32,5 @@ mtr2 = [
     [0, 0, 1]
 ]
 
-print(isIdentityMatrix(mtr1))
-print(isIdentityMatrix(mtr2))
+print(is_identity_matrix(mtr1))
+print(is_identity_matrix(mtr2))

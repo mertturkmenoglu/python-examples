@@ -9,4 +9,4 @@ for i in range(n):
     array.append(randint(0, 100))
 
 print(array)
-print(bogo_sort(array, n))
+print(bogo_sort(array))

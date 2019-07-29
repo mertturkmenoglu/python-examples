@@ -4,5 +4,6 @@ def line_count(file_name):
             pass
     return i + 1
 
+
 if __name__ == '__main__':
     print(line_count("file.txt"))

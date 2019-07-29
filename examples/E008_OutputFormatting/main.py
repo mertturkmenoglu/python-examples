@@ -12,7 +12,7 @@ print('Point: {} - {}'.format(x, y))
 print('x: {x}\ty: {y}'.format(x=x, y=y))
 
 # Old, C style formatted output. Prefer not use to.
-print('%d - %d' %(x, y))
+print('%d - %d' % (x, y))
 
 # Take input
 first = int(input('Enter the first integer: '))
