@@ -13,8 +13,9 @@ def print_message():
         print("Ni!")
 
 
-t1 = threading.Thread(target=print_numbers)
-t2 = threading.Thread(target=print_message)
+if __name__ == '__main__':
+    t1 = threading.Thread(target=print_numbers)
+    t2 = threading.Thread(target=print_message)
 
-t1.start()
-t2.start()
+    t1.start()
+    t2.start()
