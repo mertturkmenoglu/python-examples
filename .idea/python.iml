@@ -19,6 +19,7 @@
       <sourceFolder url="file://$MODULE_DIR$/examples/data_types" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples/basics" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples/multi_threading" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/network" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/notes" />
     </content>
     <orderEntry type="inheritedJdk" />
