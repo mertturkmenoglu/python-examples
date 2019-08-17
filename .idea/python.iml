@@ -22,6 +22,8 @@
       <sourceFolder url="file://$MODULE_DIR$/examples/network" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples/pandas" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples/matplotlib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/database" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/gui" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/notes" />
     </content>
     <orderEntry type="inheritedJdk" />
