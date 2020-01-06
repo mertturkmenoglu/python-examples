@@ -25,6 +25,7 @@
       <sourceFolder url="file://$MODULE_DIR$/examples/database" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples/gui" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples/gc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/algorithms" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/notes" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
